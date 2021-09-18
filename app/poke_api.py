@@ -4,7 +4,7 @@ import requests
 
 class Pokemon:
 
-    def all(self):
+    def all_pokemon(self):
         url = "https://pokeapi.co/api/v2/pokemon?limit=151"
         response = requests.get(url)
         return response.json()
@@ -18,6 +18,6 @@ class Pokemon:
 
 
 poke = Pokemon()
-# print(poke.all())
-# print(poke.get_pokemon("charmandeR"))
-print(poke.get_pokemon("charmander"))
+# print(poke.all_pokemon())
+print(poke.get_pokemon("charmandeR"))
+# print(poke.get_pokemon("charmander"))
