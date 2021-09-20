@@ -1,7 +1,6 @@
 
 import requests
 
-
 class Pokemon:
 
     def all_pokemon(self):
